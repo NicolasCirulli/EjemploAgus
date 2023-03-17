@@ -1,5 +1,5 @@
 // Configura tus credenciales de EmailJS
-emailjs.init('3y8aAbtCvvkD_Amo_');
+emailjs.init('Public key');
 
 // Obtiene el formulario HTML y agrega un evento para enviar el correo electrónico
 document.getElementById("my-form").addEventListener("submit", function(event) {
@@ -11,7 +11,7 @@ document.getElementById("my-form").addEventListener("submit", function(event) {
   var message = document.getElementById("message").value;
   
   // Envía el correo electrónico usando EmailJS
-  emailjs.send("service_gai1i6h", "template_0irom1d", {
+  emailjs.send("service id", "template id", {
     from_name: name,
     from_email: email,
     message: message
